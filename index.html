@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="./image/logo (4).png" >
+            </div>
+            <div class="nav-links" id="nav-links">
+                <img src="./image/xmark-solid.svg" class="fa fa-close"onclick="closeMenu()">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">RECEIPE</a></li>
+                </ul>
+                <button class="btn">Sign Up</button>
+            </div>
+            <img src="./image/bars-solid.svg" class="fa fa-bars" onclick="showMenu()">
+        </div>
+        <div class="banner-title">
+            <h1>Food <span> Doesn't have <br> a religion.</span> It is a religion</h1>
+            <button class="btn">Explore</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <!-- <i class="fa-solid fa-list"></i> -->
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <img src="./image/list-solid.svg">
+                <img src="./image/magnifying-glass-solid.svg">
+            </div>
+            <div class="social-icons">
+                <!-- <i class="fa-brands fa-facebook"></i> -->
+                <!-- <i class="fa-brands fa-instagram"></i> -->
+                <!-- <i class="fa-brands fa-twitter"></i> -->
+                <!-- <i class="fa-brands fa-pinterest"></i> -->
+                <img src="./image/facebook-brands.svg">
+                <img src="./image/instagram-brands.svg">
+                <img src="./image/twitter-brands.svg">
+                <img src="./image/pinterest-brands.svg">
+                
+            </div>
+        </div>
+        <div class="notifications">
+            <div class="contents">
+                <small>Subscribe Youtube channel and never miss any vedio.</small>
+                <p><a href="">PREVIEW</a><a href="">NEXT</a></p>
+            </div>
+            <div class="notification-img">
+                <img src="./image/circle-play-solid.svg">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right ="0";
+        }
+        function closeMenu(){
+            show.style.right ="-200px";
+        }
+    </script>
+    
+</body>
+</html>
